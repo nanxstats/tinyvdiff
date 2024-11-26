@@ -1,6 +1,7 @@
 import os
 import shutil
 import subprocess
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Optional, Union
 
@@ -10,7 +11,7 @@ from .constants import PDF2SVG_DEFAULT_PATHS
 class PDF2SVG:
     """Wrapper for the pdf2svg command line tool."""
 
-    DEFAULT_PATHS = PDF2SVG_DEFAULT_PATHS
+    DEFAULT_PATHS: Sequence[str] = PDF2SVG_DEFAULT_PATHS
 
     def __init__(self, executable_path: Optional[str] = None):
         """Initialize PDF2SVG wrapper.
