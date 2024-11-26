@@ -1,5 +1,28 @@
 # tinyvdiff
 
+[![PyPI version](https://img.shields.io/pypi/v/tinyvdiff)](https://pypi.org/project/tinyvdiff/)
+![Python versions](https://img.shields.io/pypi/pyversions/tinyvdiff)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/tinyvdiff)](https://pypistats.org/packages/tinyvdiff)
+![License](https://img.shields.io/pypi/l/tinyvdiff)
+
+Minimalist visual regression testing helpers.
+
+## Installation
+
+You can install tinyvdiff from PyPI:
+
+```bash
+pip3 install tinyvdiff
+```
+
+Or install the development version from GitHub:
+
+```bash
+git clone https://github.com/nanxstats/tinyvdiff.git
+cd tinyvdiff
+python3 -m pip install -e .
+```
+
 ## Why tinyvdiff?
 
 Designing a visual regression testing framework involves balancing several
@@ -28,6 +51,3 @@ effective solution:
 3. We assume it is sufficient to run visual regression tests in a single
    CI/CD operating system environment. Snapshots should be generated in a
    similar OS environment to ensure consistency with the CI/CD system.
-
-This approach keeps tinyvdiff lightweight and focused, making it a practical
-choice for many visual regression testing workflows.
