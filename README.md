@@ -8,7 +8,7 @@ used for comparisons. The ideal format must meet three seemingly conflicting
 criteria:
 
 1. **Support for diverse input types:** Graphics and documents are often
-   generated using different tools and formats (e.g., PNG vs. PDF),
+   generated using different tools and formats (for example, PNG and PDF),
    making direct comparisons difficult.
 2. **Bitwise reproducibility in plain text:** The format should capture the
    precise appearance of the output while being deterministic and easy to
