@@ -21,8 +21,9 @@ tinyvdiff takes a pragmatic approach by relaxing the third criterion and
 making reasonable assumptions about the first to deliver a simple yet
 effective solution:
 
-1. Snapshots must be in **vector PDF** format, leaving it to developers to
-   choose the tools and workflows for generating them.
+1. Input files must be in **vector PDF** format, which are then converted to
+   **vector SVG** snapshots, leaving it to developers to choose the tools
+   and workflows for generating the PDFs.
 2. PDFs are converted to **vector SVG** using `pdf2svg` for comparison.
 3. We assume it is sufficient to run visual regression tests in a single
    CI/CD operating system environment. Snapshots should be generated in a
