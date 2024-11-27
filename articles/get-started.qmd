@@ -1,0 +1,23 @@
+<!-- `.md` and `.py` files are generated from the `.qmd` file. Please edit that file. -->
+
+---
+title: "Get started"
+format: gfm
+eval: false
+---
+
+!!! tip
+
+    To run the code from this article as a Python script:
+
+    ```bash
+    python3 examples/get-started.py
+    ```
+
+## Import tinyvdiff
+
+```{python}
+from tinyvdiff.pdf2svg import PDF2SVG
+```
+
+TBA
