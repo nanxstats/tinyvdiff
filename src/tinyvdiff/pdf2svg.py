@@ -3,7 +3,6 @@ import shutil
 import subprocess
 from collections.abc import Sequence
 from pathlib import Path
-from typing import Optional, Union
 
 from .constants import PDF2SVG_DEFAULT_PATHS
 
@@ -13,7 +12,7 @@ class PDF2SVG:
 
     DEFAULT_PATHS: Sequence[str] = PDF2SVG_DEFAULT_PATHS
 
-    def __init__(self, executable_path: Optional[str] = None):
+    def __init__(self, executable_path: str | None = None):
         """Initialize PDF2SVG wrapper.
 
         Args:
@@ -31,7 +30,7 @@ class PDF2SVG:
                 "pdf2svg executable not found. Please install it or provide path."
             )
 
-    def _find_executable(self) -> Optional[str]:
+    def _find_executable(self) -> str | None:
         """Locate pdf2svg executable using default paths and PATH environment.
 
         Returns:
@@ -52,9 +51,9 @@ class PDF2SVG:
 
     def convert(
         self,
-        input_path: Union[str, Path],
-        output_path: Optional[Union[str, Path]] = None,
-        page: Optional[int] = None,
+        input_path: str | Path,
+        output_path: str | Path | None = None,
+        page: int | None = None,
     ) -> Path:
         """Convert PDF to SVG using pdf2svg.
 
