@@ -1,4 +1,4 @@
-# tinyvdiff <img src="docs/assets/logo.png" align="right" width="120" />
+# tinyvdiff <img src="assets/logo.png" align="right" width="120" />
 
 [![PyPI version](https://img.shields.io/pypi/v/tinyvdiff)](https://pypi.org/project/tinyvdiff/)
 ![Python versions](https://img.shields.io/pypi/pyversions/tinyvdiff)

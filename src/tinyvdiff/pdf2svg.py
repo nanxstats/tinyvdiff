@@ -17,7 +17,7 @@ class PDF2SVG:
 
         Args:
             executable_path: Optional path to pdf2svg executable.
-            If None, will attempt to locate it.
+                If None, will attempt to locate it.
 
         Raises:
             FileNotFoundError: If pdf2svg executable cannot be found.
