@@ -23,6 +23,34 @@ cd tinyvdiff
 python3 -m pip install -e .
 ```
 
+## System dependency
+
+tinyvdiff requires the `pdf2svg` command line tool.
+The easiest way to make `pdf2svg` available is to install it via these commands
+using package managers.
+
+On macOS (using Homebrew):
+
+```bash
+brew install pdf2svg
+```
+
+On Ubuntu:
+
+```bash
+sudo apt-get install pdf2svg
+```
+
+On Windows (using Chocolatey):
+
+```bash
+choco install pdf2svg-win
+```
+
+If you do not have permission to install CLI tools globally, you can customize
+the location of the `pdf2svg` executable. As long as there is a user-accessible
+path to the executable, tinyvdiff will work.
+
 ## Why tinyvdiff?
 
 Designing a visual regression testing framework involves balancing several
@@ -39,6 +67,8 @@ criteria:
 3. **Platform independence:** Subtle differences in system fonts or
    dependencies can lead to inconsistent outputs across environments,
    yet the format should produce visually identical results on any system.
+
+## How tinyvdiff works
 
 tinyvdiff takes a pragmatic approach by relaxing the third criterion and
 making reasonable assumptions about the first to deliver a simple yet
