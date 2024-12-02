@@ -30,6 +30,7 @@ jobs:
           pip install -e '.[all]'
       - name: Test with pytest
         run: |
+          pip install numpy matplotlib fpdf2
           pip install pytest pytest-cov
           pytest --cov=tinyvdiff --cov-report=xml
 
@@ -52,5 +53,6 @@ jobs:
           pip install -e '.[all]'
       - name: Test with pytest
         run: |
+          pip install numpy matplotlib fpdf2
           pip install pytest pytest-cov
           pytest --cov=tinyvdiff --cov-report=xml
