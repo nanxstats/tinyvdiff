@@ -11,6 +11,8 @@ nav:
     - articles/get-started.md
   - API Reference:
     - pdf2svg: reference/pdf2svg.md
+    - snapshot: reference/snapshot.md
+    - pytest-plugin: reference/pytest-plugin.md
   - Changelog: changelog.md
 
 extra_css:
