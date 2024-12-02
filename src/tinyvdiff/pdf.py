@@ -8,16 +8,15 @@ def get_pdf_page_count(pdf_path: str | Path) -> int:
     Get the number of pages in a PDF file.
 
     Args:
-        pdf_path (str | Path): Path to the PDF file. Can include ~ for home directory.
+        pdf_path (str | Path): Path to the PDF file.
 
     Returns:
-        int: Number of pages in the PDF file
+        int: Number of pages in the PDF file.
 
     Raises:
-        FileNotFoundError: If the PDF file does not exist
-        ValueError: If the file is not a valid PDF
+        FileNotFoundError: If the PDF file does not exist.
+        ValueError: If the file is not a valid PDF.
     """
-    # Convert to Path and expand user home directory and resolve symlinks
     pdf_path = Path(pdf_path).expanduser().resolve()
 
     if not pdf_path.exists():
