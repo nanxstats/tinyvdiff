@@ -6,7 +6,12 @@ from .pdf2svg import PDF2SVG
 from .snapshot import compare_svgs, update_snapshot
 
 
-def pytest_addoption(parser):
+def pytest_addoption(parser: pytest.Parser) -> None:
+    """Add tinyvdiff command line options to pytest.
+
+    Args:
+        parser: pytest command line parser to extend.
+    """
     parser.addoption(
         "--tinyvdiff-update",
         action="store_true",
@@ -16,15 +21,39 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture
-def tinyvdiff(request):
+def tinyvdiff(request: pytest.FixtureRequest) -> "TinyVDiff":
+    """Pytest fixture providing TinyVDiff functionality.
+
+    Args:
+        request: Pytest fixture request object.
+
+    Returns:
+        Configured TinyVDiff instance for the current test.
+    """
+
     class TinyVDiff:
-        def __init__(self):
+        """Helper class for visual regression testing with PDFs."""
+
+        def __init__(self) -> None:
+            """Initialize TinyVDiff with configuration from pytest."""
             self.pdf2svg = PDF2SVG()
             self.update_snapshots = request.config.getoption("--tinyvdiff-update")
             # Determine the snapshot directory relative to the test file
             self.snapshot_dir = Path(request.node.fspath).parent / "snapshots"
 
-        def assert_pdf_snapshot(self, pdf_path, snapshot_name):
+        def assert_pdf_snapshot(self, pdf_path: Path | str, snapshot_name: str) -> None:
+            """Assert that a PDF matches its stored snapshot.
+
+            Converts the PDF to SVG and compares it with a stored snapshot,
+            updating the snapshot if requested via `--tinyvdiff-update`.
+
+            Args:
+                pdf_path: Path to the PDF file to test.
+                snapshot_name: Name of the snapshot file to compare against.
+
+            Raises:
+                pytest.Failed: If snapshots don't match and updates aren't enabled.
+            """
             # Convert PDF to SVG
             svg_generated = self.pdf2svg.convert(pdf_path)
             snapshot_path = self.snapshot_dir / snapshot_name
