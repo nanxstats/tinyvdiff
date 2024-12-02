@@ -1,4 +1,4 @@
-# pytest plugin
+# snapshot utilities
 
 ::: tinyvdiff.snapshot
     options:
