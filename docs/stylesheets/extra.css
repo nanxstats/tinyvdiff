@@ -1,13 +1,17 @@
 /* Color scheme */
 
+/*
+ * Color palette from: https://coolors.co/palette/590d22-800f2f-a4133c-c9184a-ff4d6d-ff758f-ff8fa3-ffb3c1-ffccd5-fff0f3
+ */
+
 :root {
-    --md-primary-fg-color: hsla(220, 46%, 41%, 1);
-    --md-primary-fg-color--light: hsla(220, 46%, 51%, 1);
-    --md-primary-fg-color--dark: hsla(220, 46%, 31%, 1);
+    --md-primary-fg-color: #800F2F;
+    --md-primary-fg-color--light: #590D22;
+    --md-primary-fg-color--dark: #A4133C;
     --md-primary-bg-color: hsla(0, 0%, 100%, 1);
     --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
-    --md-accent-fg-color: hsla(220, 76%, 61%, 1);
-    --md-accent-fg-color--transparent: hsla(220, 76%, 61%, 0.1);
+    --md-accent-fg-color: #C9184A;
+    --md-accent-fg-color--transparent: #FFF0F3;
     --md-accent-bg-color: hsla(0, 0%, 100%, 1);
     --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
 }
