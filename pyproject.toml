@@ -7,6 +7,7 @@ authors = [
 ]
 dependencies = [
     "pytest>=8.3.3",
+    "pypdf>=5.1.0",
 ]
 readme = "README.md"
 

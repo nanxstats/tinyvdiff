@@ -272,6 +272,8 @@ pymdown-extensions==10.12
     # via mkdocstrings
 pyparsing==3.2.0
     # via matplotlib
+pypdf==5.1.0
+    # via tinyvdiff
 pytest==8.3.4
     # via tinyvdiff
 python-dateutil==2.9.0.post0
