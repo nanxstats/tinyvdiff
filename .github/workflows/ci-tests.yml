@@ -22,6 +22,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install pdf2svg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pdf2svg
       - name: Install dependencies
         run: |
           # we are using the -e flag, so that code cov finds the source.
@@ -48,6 +52,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install pdf2svg
+        run: |
+          choco install pdf2svg-win -y
       - name: Install dependencies
         run: |
           pip install -e '.[all]'
