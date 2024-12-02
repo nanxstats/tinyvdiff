@@ -3,7 +3,8 @@
 ::: tinyvdiff.pytest_plugin
     options:
       members:
-        - pytest_addoption
+        - TinyVDiff
         - tinyvdiff
+        - pytest_addoption
       show_root_heading: true
-      show_source: true
+      show_source: false
