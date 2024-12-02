@@ -1,10 +1,15 @@
 from pathlib import Path
+import platform
+import uuid
 
 import pytest
-import uuid
 
 from .snapshot_matplotlib import generate_plot
 from .snapshot_fpdf2 import generate_fpdf2, data
+
+macos_only = pytest.mark.skipif(
+    platform.system() != "Darwin", reason="These snapshots are generated on macOS"
+)
 
 
 @pytest.fixture
@@ -13,12 +18,14 @@ def temp_pdf(tmp_path):
     return tmp_path / "test.pdf"
 
 
+@macos_only
 def test_matplotlib_visual(tinyvdiff, temp_pdf):
     """Test visual regression with matplotlib-generated PDF"""
     pdf_path = generate_plot(temp_pdf)
     tinyvdiff.assert_pdf_snapshot(pdf_path, "snapshot_matplotlib.svg")
 
 
+@macos_only
 def test_fpdf_visual(tinyvdiff, temp_pdf):
     """Test visual regression with fpdf2-generated PDF"""
     pdf_path = generate_fpdf2(data, temp_pdf)
