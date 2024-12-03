@@ -1,6 +1,6 @@
-# Why
+# Design
 
-## Why tinyvdiff?
+## Visual regression testing is hard
 
 Designing a visual regression testing framework involves balancing several
 competing challenges, particularly when it comes to the snapshot file format
@@ -17,7 +17,7 @@ criteria:
    dependencies can lead to inconsistent outputs across environments,
    yet the format should produce visually identical results on any system.
 
-## How it works
+## How tinyvdiff works
 
 tinyvdiff takes a pragmatic approach by relaxing the third criterion and
 making reasonable assumptions about the first to deliver a simple yet

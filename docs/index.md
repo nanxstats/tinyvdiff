@@ -7,7 +7,8 @@
 
 Minimalist visual regression testing helpers.
 
-Learn more about [the idea behind](https://nanx.me/tinyvdiff/articles/why/).
+Learn more about [the idea behind
+tinyvdiff](https://nanx.me/tinyvdiff/articles/design/).
 To use it in your project, follow the
 [setup guide](https://nanx.me/tinyvdiff/articles/setup/).
 
