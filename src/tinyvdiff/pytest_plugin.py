@@ -19,6 +19,11 @@ def pytest_addoption(parser: pytest.Parser) -> None:
         default=False,
         help="Update visual regression snapshots.",
     )
+    parser.addoption(
+        "--tinyvdiff-pdf2svg",
+        default=None,
+        help="Path to a custom pdf2svg executable.",
+    )
 
 
 class TinyVDiff:
@@ -26,7 +31,8 @@ class TinyVDiff:
 
     def __init__(self, request: pytest.FixtureRequest) -> None:
         """Initialize TinyVDiff with configuration from pytest."""
-        self.pdf2svg = PDF2SVG()
+        pdf2svg_path = request.config.getoption("--tinyvdiff-pdf2svg")
+        self.pdf2svg = PDF2SVG(executable_path=pdf2svg_path)
         self.update_snapshots = request.config.getoption("--tinyvdiff-update")
         # Determine the snapshot directory relative to the test file
         self.snapshot_dir = Path(request.node.fspath).parent / "snapshots"
