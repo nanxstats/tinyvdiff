@@ -1,5 +1,26 @@
 # Changelog
 
+## tinyvdiff 0.3.0
+
+### New features
+
+- The pytest plugin now supports multi-page PDF files.
+  Each multi-page PDF will correspond to SVG snapshots with file name
+  suffixes `_p1.svg`, `_p2.svg`, `...` (#15).
+- Added a pytest parser option `--tinyvdiff-pdf2svg` to allow specifying a
+  custom path to `pdf2svg` in test files or project-wide `conftest.py`
+  when needed (#18).
+
+### Testing
+
+- Added unit tests for the low-level conversion and snapshotting facilities
+  that support the pytest plugin (#17).
+
+### Improvements
+
+- Exposed key functions in `__init__.py` so that users can use the simpler
+  `import tinyvdiff as tvd` and `tvd.` syntax to access them (#16).
+
 ## tinyvdiff 0.2.0
 
 ### New features
