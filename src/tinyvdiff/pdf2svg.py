@@ -20,15 +20,23 @@ class PDF2SVG:
                 If None, will attempt to locate it.
 
         Raises:
-            FileNotFoundError: If pdf2svg executable cannot be found.
+            FileNotFoundError: If pdf2svg executable from the canonical
+                locations can't be found, or if a custom path is provided
+                but does not exist.
         """
         if executable_path:
             executable_path = str(Path(executable_path).expanduser().resolve())
-        self.executable_path = executable_path or self._find_executable()
-        if not self.executable_path:
-            raise FileNotFoundError(
-                "pdf2svg executable not found. Please install it or provide path."
-            )
+            if not os.path.isfile(executable_path):
+                raise FileNotFoundError(
+                    f"Specified pdf2svg executable not found: {executable_path}"
+                )
+            self.executable_path = executable_path
+        else:
+            self.executable_path = self._find_executable()
+            if not self.executable_path:
+                raise FileNotFoundError(
+                    "pdf2svg executable not found. Please install it or provide path."
+                )
 
     def _find_executable(self) -> str | None:
         """Locate pdf2svg executable using default paths and PATH environment.
