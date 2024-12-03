@@ -13,6 +13,7 @@ nav:
     - pytest_plugin: reference/pytest_plugin.md
     - snapshot: reference/snapshot.md
     - pdf2svg: reference/pdf2svg.md
+    - pdf: reference/pdf.md
   - Changelog: changelog.md
 
 extra_css:
