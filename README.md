@@ -17,7 +17,7 @@ To use it in your project, follow the
 You can install tinyvdiff from PyPI:
 
 ```bash
-pip3 install tinyvdiff
+pip install tinyvdiff
 ```
 
 Or install the development version from GitHub:
@@ -25,5 +25,5 @@ Or install the development version from GitHub:
 ```bash
 git clone https://github.com/nanxstats/tinyvdiff.git
 cd tinyvdiff
-python3 -m pip install -e .
+python -m pip install -e .
 ```
