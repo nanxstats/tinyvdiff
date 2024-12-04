@@ -1,5 +1,5 @@
 """
-tinyvdiff - Minimalist visual regression testing helpers
+tinyvdiff - Minimalist visual regression testing plugin for pytest
 """
 
 from .pdf import get_pdf_page_count

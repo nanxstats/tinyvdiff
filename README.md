@@ -5,7 +5,7 @@
 [![PyPI Downloads](https://img.shields.io/pypi/dm/tinyvdiff)](https://pypistats.org/packages/tinyvdiff)
 ![License](https://img.shields.io/pypi/l/tinyvdiff)
 
-Minimalist visual regression testing helpers.
+Minimalist visual regression testing plugin for pytest.
 
 Learn more about [the idea behind
 tinyvdiff](https://nanx.me/tinyvdiff/articles/design/).
