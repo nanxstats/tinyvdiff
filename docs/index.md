@@ -25,5 +25,5 @@ Or install the development version from GitHub:
 ```bash
 git clone https://github.com/nanxstats/tinyvdiff.git
 cd tinyvdiff
-python -m pip install -e .
+python3 -m pip install -e .
 ```
