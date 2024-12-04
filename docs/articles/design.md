@@ -17,7 +17,7 @@ criteria:
    dependencies can lead to inconsistent outputs across environments,
    yet the format should produce visually identical results on any system.
 
-## How tinyvdiff works
+## Visual regression testing is easy
 
 tinyvdiff takes a pragmatic approach by relaxing the third criterion and
 making reasonable assumptions about the first to deliver a simple yet
