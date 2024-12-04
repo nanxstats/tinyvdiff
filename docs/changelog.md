@@ -1,5 +1,13 @@
 # Changelog
 
+## tinyvdiff 0.3.1
+
+### Documentation
+
+- Added a [setup guide article](https://nanx.me/tinyvdiff/articles/setup/)
+  with a demo project detailing the steps and practical considerations for
+  using tinyvdiff in projects (#20).
+
 ## tinyvdiff 0.3.0
 
 ### New features
