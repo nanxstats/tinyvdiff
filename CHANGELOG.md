@@ -1,5 +1,12 @@
 # Changelog
 
+## tinyvdiff 0.3.2
+
+### Documentation
+
+- Use `pip` and `python3` in installation instructions consistently.
+- Use more specific package description.
+
 ## tinyvdiff 0.3.1
 
 ### Documentation
