@@ -73,6 +73,9 @@ You can use exactly the same commands to install `pdf2svg` in your
 GitHub Actions workflows. See [customizing GitHub-hosted
 runners](https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/customizing-github-hosted-runners).
 
+Check this [Repology page](https://repology.org/project/pdf2svg/versions) to see
+which other Linux distributions or package managers have pdf2svg available.
+
 ## Write snapshot tests
 
 Assume your function can already generate (technically) reproducible PDF
