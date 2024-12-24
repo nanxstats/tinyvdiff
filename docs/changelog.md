@@ -1,5 +1,13 @@
 # Changelog
 
+## tinyvdiff 0.3.3
+
+### Maintenance
+
+- Add Python 3.13 to the list of supported Python versions and
+  use it for the default package development environment (#22).
+- Add badges for CI tests and mkdocs workflows to `README.md` (#23).
+
 ## tinyvdiff 0.3.2
 
 ### Documentation
