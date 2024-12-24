@@ -41,7 +41,7 @@ Changelog = "https://github.com/nanxstats/tinyvdiff/blob/main/CHANGELOG.md"
 tinyvdiff = "tinyvdiff.pytest_plugin"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling==1.26.3"] # <https://github.com/astral-sh/rye/issues/1446>
 build-backend = "hatchling.build"
 
 [tool.rye]
