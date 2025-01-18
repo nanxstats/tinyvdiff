@@ -49,6 +49,7 @@ managed = true
 dev-dependencies = [
     "ruff>=0.8.0",
     "mkdocs>=1.6.1",
+    "mkdocs-autorefs==1.2.0",
     "mkdocs-material>=9.5.46",
     "mkdocstrings-python>=1.12.2",
     "nbconvert>=7.16.4",
