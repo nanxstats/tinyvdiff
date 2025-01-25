@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from tinyvdiff.pdf2svg import PDF2SVG
+
 from .snapshot_fpdf2 import generate_pdf_multi_page
 
 
