@@ -1,6 +1,6 @@
 import pytest
 
-from tinyvdiff.snapshot import normalize_svg, compare_svgs, update_snapshot
+from tinyvdiff.snapshot import compare_svgs, normalize_svg, update_snapshot
 
 
 @pytest.fixture

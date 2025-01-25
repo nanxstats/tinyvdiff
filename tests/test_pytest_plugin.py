@@ -1,11 +1,11 @@
-from pathlib import Path
 import platform
 import uuid
+from pathlib import Path
 
 import pytest
 
+from .snapshot_fpdf2 import data, generate_pdf_multi_page, generate_pdf_single_page
 from .snapshot_matplotlib import generate_plot
-from .snapshot_fpdf2 import generate_pdf_single_page, generate_pdf_multi_page, data
 
 macos_only = pytest.mark.skipif(
     platform.system() != "Darwin", reason="These snapshots are generated on macOS"
