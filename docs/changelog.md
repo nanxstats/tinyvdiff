@@ -1,5 +1,12 @@
 # Changelog
 
+## tinyvdiff 0.3.4
+
+### Maintenance
+
+- Use isort and ruff to sort imports and format Python code.
+  Use shell-format to format shell scripts (#24).
+
 ## tinyvdiff 0.3.3
 
 ### Maintenance
