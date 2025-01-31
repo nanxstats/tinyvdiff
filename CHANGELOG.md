@@ -1,5 +1,12 @@
 # Changelog
 
+## tinyvdiff 0.3.5
+
+### Maintenance
+
+- Changed logo image path from relative to absolute URL for proper rendering
+  on PyPI (#26).
+
 ## tinyvdiff 0.3.4
 
 ### Maintenance
