@@ -1,5 +1,12 @@
 # Changelog
 
+## tinyvdiff 0.3.6
+
+### Maintenance
+
+- Changed logo typeface for a fresh look. Updated the logo text rendering
+  workflow to use SVG and web browsers for better results (#28).
+
 ## tinyvdiff 0.3.5
 
 ### Maintenance
