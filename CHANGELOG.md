@@ -1,5 +1,11 @@
 # Changelog
 
+## tinyvdiff 0.3.7
+
+### Maintenance
+
+- Use uv to manage project (#30).
+
 ## tinyvdiff 0.3.6
 
 ### Maintenance
