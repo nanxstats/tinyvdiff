@@ -31,10 +31,10 @@ already works.
 
 ## Install tinyvdiff
 
-Add and install tinyvdiff as a development dependency. If you use Rye:
+Add and install tinyvdiff as a development dependency. If you use uv:
 
 ```bash
-rye add --dev tinyvdiff
+uv add --dev tinyvdiff
 ```
 
 Next, install tinyvdiff in your CI/CD workflow. This could vary depending on
