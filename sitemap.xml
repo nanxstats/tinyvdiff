@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://nanx.me/tinyvdiff/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/changelog/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/articles/design/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/articles/setup/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/reference/pdf/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/reference/pdf2svg/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/reference/pytest_plugin/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://nanx.me/tinyvdiff/reference/snapshot/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+</urlset>
