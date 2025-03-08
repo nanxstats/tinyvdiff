@@ -1,5 +1,12 @@
 # Changelog
 
+## tinyvdiff 0.3.8
+
+### Testing
+
+- Updated SVG snapshot files using the latest version of pdf2svg (0.2.4)
+  from Homebrew so that the macOS-only snapshot tests pass correctly (#32).
+
 ## tinyvdiff 0.3.7
 
 ### Maintenance
