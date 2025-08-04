@@ -4,7 +4,6 @@
 ![Python versions](https://img.shields.io/pypi/pyversions/tinyvdiff)
 [![CI Tests](https://github.com/nanxstats/tinyvdiff/actions/workflows/ci-tests.yml/badge.svg)](https://github.com/nanxstats/tinyvdiff/actions/workflows/ci-tests.yml)
 [![mkdocs](https://github.com/nanxstats/tinyvdiff/actions/workflows/mkdocs.yml/badge.svg)](https://nanx.me/tinyvdiff/)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/tinyvdiff)](https://pypistats.org/packages/tinyvdiff)
 ![License](https://img.shields.io/pypi/l/tinyvdiff)
 
 Minimalist visual regression testing plugin for pytest.
