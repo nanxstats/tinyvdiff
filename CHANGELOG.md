@@ -1,5 +1,13 @@
 # Changelog
 
+## tinyvdiff 0.3.9
+
+### Maintenance
+
+- Removed download statistics badge from `README.md` due to availability issues
+  with the service (#35).
+- Use Python 3.13.7 for the default package development environment (#36).
+
 ## tinyvdiff 0.3.8
 
 ### Testing
