@@ -11,6 +11,7 @@ class PDF2SVG:
     """Wrapper for the pdf2svg command line tool."""
 
     DEFAULT_PATHS: Sequence[str] = PDF2SVG_DEFAULT_PATHS
+    executable_path: str
 
     def __init__(self, executable_path: str | None = None):
         """Initialize PDF2SVG wrapper.
@@ -32,11 +33,12 @@ class PDF2SVG:
                 )
             self.executable_path = executable_path
         else:
-            self.executable_path = self._find_executable()
-            if not self.executable_path:
+            found_path = self._find_executable()
+            if not found_path:
                 raise FileNotFoundError(
                     "pdf2svg executable not found. Please install it or provide path."
                 )
+            self.executable_path = found_path
 
     def _find_executable(self) -> str | None:
         """Locate pdf2svg executable using default paths and PATH environment.
