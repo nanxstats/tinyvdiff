@@ -1,5 +1,15 @@
 # Changelog
 
+## tinyvdiff 0.4.0
+
+### Typing
+
+- Add mypy as a development dependency and fix all mypy type checking issues (#39).
+
+### Maintenance
+
+- Add a GitHub Actions workflow to run mypy checks and a mypy badge to `README.md` (#40).
+
 ## tinyvdiff 0.3.9
 
 ### Maintenance
