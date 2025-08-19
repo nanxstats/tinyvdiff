@@ -2,6 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/tinyvdiff)](https://pypi.org/project/tinyvdiff/)
 ![Python versions](https://img.shields.io/pypi/pyversions/tinyvdiff)
+[![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 [![CI Tests](https://github.com/nanxstats/tinyvdiff/actions/workflows/ci-tests.yml/badge.svg)](https://github.com/nanxstats/tinyvdiff/actions/workflows/ci-tests.yml)
 [![mkdocs](https://github.com/nanxstats/tinyvdiff/actions/workflows/mkdocs.yml/badge.svg)](https://nanx.me/tinyvdiff/)
 ![License](https://img.shields.io/pypi/l/tinyvdiff)
