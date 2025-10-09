@@ -1,5 +1,15 @@
 # Changelog
 
+## tinyvdiff 0.4.1
+
+### Maintenance
+
+- Added Python 3.14 support and set as default development environment (#43).
+- Updated GitHub Actions workflows to use the latest `checkout` and
+  `setup-python` versions (#43).
+- Refactored the logo generation script to use ImageMagick, removing the
+  previous R and hexSticker dependency (#45).
+
 ## tinyvdiff 0.4.0
 
 ### Typing
