@@ -6,7 +6,7 @@ from pathlib import Path
 
 def _get_program_data_path() -> str:
     """Get the ProgramData path on Windows."""
-    return os.environ.get("ProgramData", "C:\\ProgramData")
+    return os.environ.get("PROGRAMDATA", "C:\\ProgramData")
 
 
 # OS-specific default paths for pdf2svg executable
