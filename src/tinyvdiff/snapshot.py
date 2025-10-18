@@ -32,8 +32,8 @@ def compare_svgs(generated_svg_path: Path | str, snapshot_svg_path: Path | str) 
         True if the SVGs match after normalization, False otherwise.
     """
     with (
-        open(generated_svg_path, "r") as gen_file,
-        open(snapshot_svg_path, "r") as snap_file,
+        open(generated_svg_path) as gen_file,
+        open(snapshot_svg_path) as snap_file,
     ):
         gen_svg = normalize_svg(gen_file.read())
         snap_svg = normalize_svg(snap_file.read())
