@@ -1,5 +1,22 @@
 # Changelog
 
+## tinyvdiff 0.5.0
+
+### Improvements
+
+- Specify explicit UTF-8 encoding when reading and writing SVG files so
+  snapshot comparisons always use the same encoding (#49).
+  This change cannot eliminate SVG content differences caused by different
+  platforms or `pdf2svg` versions, but it helps avoid subtle bugs from
+  text file encoding discrepancies.
+
+### Linting
+
+- Added ruff linter configuration to `pyproject.toml` with popular rule sets
+  including pycodestyle, Pyflakes, pyupgrade, flake8-bugbear, flake8-simplify,
+  and isort (#47).
+- Fixed `ruff check` linting issues including F401, UP015, and SIM112 (#47).
+
 ## tinyvdiff 0.4.1
 
 ### Maintenance
