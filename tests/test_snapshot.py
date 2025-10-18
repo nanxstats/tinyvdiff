@@ -19,7 +19,7 @@ def sample_svg_content():
 def sample_svg_file(tmp_path, sample_svg_content):
     """Pytest fixture providing a sample SVG file"""
     svg_file = tmp_path / "test.svg"
-    svg_file.write_text(sample_svg_content)
+    svg_file.write_text(sample_svg_content, encoding="utf-8")
     return svg_file
 
 
@@ -51,8 +51,8 @@ def test_compare_svgs_identical(tmp_path, sample_svg_content):
     svg1 = tmp_path / "svg1.svg"
     svg2 = tmp_path / "svg2.svg"
 
-    svg1.write_text(sample_svg_content)
-    svg2.write_text(sample_svg_content)
+    svg1.write_text(sample_svg_content, encoding="utf-8")
+    svg2.write_text(sample_svg_content, encoding="utf-8")
 
     assert compare_svgs(svg1, svg2)
 
@@ -62,11 +62,11 @@ def test_compare_svgs_different_ids(tmp_path, sample_svg_content):
     svg1 = tmp_path / "svg1.svg"
     svg2 = tmp_path / "svg2.svg"
 
-    svg1.write_text(sample_svg_content)
+    svg1.write_text(sample_svg_content, encoding="utf-8")
     modified_content = sample_svg_content.replace(
         'id="unique_123"', 'id="different_123"'
     )
-    svg2.write_text(modified_content)
+    svg2.write_text(modified_content, encoding="utf-8")
 
     assert compare_svgs(svg1, svg2)
 
@@ -76,9 +76,9 @@ def test_compare_svgs_different_content(tmp_path, sample_svg_content):
     svg1 = tmp_path / "svg1.svg"
     svg2 = tmp_path / "svg2.svg"
 
-    svg1.write_text(sample_svg_content)
+    svg1.write_text(sample_svg_content, encoding="utf-8")
     modified_content = sample_svg_content.replace('width="80"', 'width="90"')
-    svg2.write_text(modified_content)
+    svg2.write_text(modified_content, encoding="utf-8")
 
     assert not compare_svgs(svg1, svg2)
 
@@ -88,11 +88,11 @@ def test_update_snapshot(tmp_path, sample_svg_content):
     source = tmp_path / "source.svg"
     snapshot = tmp_path / "snapshots" / "test.svg"
 
-    source.write_text(sample_svg_content)
+    source.write_text(sample_svg_content, encoding="utf-8")
     update_snapshot(source, snapshot)
 
     assert snapshot.exists()
-    assert snapshot.read_text() == sample_svg_content
+    assert snapshot.read_text(encoding="utf-8") == sample_svg_content
 
 
 def test_update_snapshot_creates_dirs(tmp_path, sample_svg_content):
@@ -100,8 +100,8 @@ def test_update_snapshot_creates_dirs(tmp_path, sample_svg_content):
     source = tmp_path / "source.svg"
     snapshot = tmp_path / "nested" / "directory" / "test.svg"
 
-    source.write_text(sample_svg_content)
+    source.write_text(sample_svg_content, encoding="utf-8")
     update_snapshot(source, snapshot)
 
     assert snapshot.exists()
-    assert snapshot.read_text() == sample_svg_content
+    assert snapshot.read_text(encoding="utf-8") == sample_svg_content

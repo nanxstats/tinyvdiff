@@ -37,7 +37,7 @@ def test_get_pdf_page_count_missing_file(tmp_path):
 
 def test_get_pdf_page_count_invalid_file(tmp_path):
     invalid_pdf = tmp_path / "invalid.pdf"
-    invalid_pdf.write_text("This is not a PDF file")
+    invalid_pdf.write_text("This is not a PDF file", encoding="utf-8")
 
     with pytest.raises(ValueError):
         get_pdf_page_count(invalid_pdf)
