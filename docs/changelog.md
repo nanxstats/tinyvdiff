@@ -1,5 +1,13 @@
 # Changelog
 
+## tinyvdiff 0.5.1
+
+### Maintenance
+
+- Added GitHub Actions workflow to run `ruff check` for code linting (#51).
+- Updated GitHub Actions workflows to use `actions/checkout@v6` (#51).
+- Updated badges in `README.md` (#51).
+
 ## tinyvdiff 0.5.0
 
 ### Improvements
