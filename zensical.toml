@@ -3,6 +3,9 @@ site_name = "tinyvdiff"
 site_description = "Minimalist visual regression testing plugin for pytest"
 site_author = "Nan Xiao"
 site_url = "https://nanx.me/tinyvdiff/"
+repo_url = "https://github.com/nanxstats/tinyvdiff"
+repo_name = "nanxstats/tinyvdiff"
+edit_uri = "edit/main/docs/"
 copyright = """
 Copyright &copy; 2026 tinyvdiff authors
 """
@@ -75,12 +78,8 @@ toggle.name = "Switch to light mode"
 text = "Source Sans 3"
 code = "JetBrains Mono"
 
-# ----------------------------------------------------------------------------
-# The "extra" section contains miscellaneous settings.
-# ----------------------------------------------------------------------------
-[[project.extra.social]]
-icon = "fontawesome/brands/github"
-link = "https://github.com/nanxstats/tinyvdiff"
+[project.theme.icon]
+repo = "fontawesome/brands/github"
 
 # ----------------------------------------------------------------------------
 # Section for configuring mkdocstrings plugin
