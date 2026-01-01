@@ -64,6 +64,7 @@ body {
 
 .md-typeset {
     font-size: 1rem;
+    letter-spacing: normal;
 }
 
 .md-path {
