@@ -73,7 +73,7 @@ toggle.name = "Switch to light mode"
 
 [project.theme.font]
 text = "Source Sans 3"
-code = "Jetbrains Mono"
+code = "JetBrains Mono"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
