@@ -1,0 +1,97 @@
+[project]
+site_name = "tinyvdiff"
+site_description = "Minimalist visual regression testing plugin for pytest"
+site_author = "Nan Xiao"
+site_url = "https://nanx.me/tinyvdiff/"
+copyright = """
+Copyright &copy; 2026 tinyvdiff authors
+"""
+
+nav = [
+    { "Home" = "index.md" },
+    { "Articles" = [
+        "articles/design.md",
+        "articles/setup.md",
+    ] },
+    { "API Reference" = [
+        { "pytest_plugin" = "reference/pytest_plugin.md" },
+        { "snapshot" = "reference/snapshot.md" },
+        { "pdf2svg" = "reference/pdf2svg.md" },
+        { "pdf" = "reference/pdf.md" },
+    ] },
+    { "Changelog" = "changelog.md" },
+]
+
+extra_css = ["stylesheets/extra.css"]
+
+# ----------------------------------------------------------------------------
+# Section for configuring theme options
+# ----------------------------------------------------------------------------
+[project.theme]
+logo = "assets/logo.png"
+favicon = "assets/favicon.png"
+language = "en"
+
+features = [
+    "announce.dismiss",
+    "content.action.edit",
+    "content.action.view",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "header.autohide",
+    # "navigation.expand",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    #"navigation.instant.progress",
+    "navigation.path",
+    #"navigation.prune",
+    "navigation.sections",
+    #"navigation.tabs",
+    #"navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    # "toc.follow",
+    #"toc.integrate",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.theme.font]
+text = "Source Sans 3"
+code = "JetBrains Mono"
+
+# ----------------------------------------------------------------------------
+# The "extra" section contains miscellaneous settings.
+# ----------------------------------------------------------------------------
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/nanxstats/tinyvdiff"
+
+# ----------------------------------------------------------------------------
+# Section for configuring mkdocstrings plugin
+# ----------------------------------------------------------------------------
+[project.plugins.mkdocstrings]
+default_handler = "python"
+
+[project.plugins.mkdocstrings.handlers.python]
+paths = ["src"]
+
+[project.plugins.mkdocstrings.handlers.python.options]
+inherited_members = true
+show_root_heading = true
+show_source = false
