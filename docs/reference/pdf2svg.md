@@ -4,5 +4,3 @@
     options:
       members:
         - PDF2SVG
-      show_root_heading: true
-      show_source: false
