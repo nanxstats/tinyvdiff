@@ -1,5 +1,16 @@
 # Changelog
 
+## tinyvdiff 0.5.2
+
+### Documentation
+
+- Migrated documentation site to use Zensical (#54, #55, #56, #57, #58).
+
+### Maintenance
+
+- Added exclusion rules to the hatchling build configuration to reduce the
+  file size of built source distributions and wheels (#59).
+
 ## tinyvdiff 0.5.1
 
 ### Maintenance
