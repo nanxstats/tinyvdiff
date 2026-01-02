@@ -1,6 +1,6 @@
 [project]
 name = "tinyvdiff"
-version = "0.5.1"
+version = "0.5.2"
 description = "Minimalist visual regression testing plugin for pytest"
 authors = [{ name = "Nan Xiao", email = "me@nanx.me" }]
 dependencies = ["pytest>=8.3.3", "pypdf>=5.1.0"]
