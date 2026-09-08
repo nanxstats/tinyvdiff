@@ -1,5 +1,13 @@
 # Changelog
 
+## tinyvdiff (development version)
+
+### Maintenance
+
+- Update GitHub Actions workflows to `actions/checkout@v7`,
+  `actions/setup-python@v7`, `actions/configure-pages@v6`,
+  `actions/upload-pages-artifact@v5` and `actions/deploy-pages@v5`.
+
 ## tinyvdiff 0.5.2
 
 ### Documentation
