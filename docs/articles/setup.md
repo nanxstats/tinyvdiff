@@ -204,7 +204,7 @@ skip_if_not_linux = pytest.mark.skipif(
     platform.system() != "Linux", reason="These tests only run on Linux"
 )
 
+
 @skip_if_not_linux
-def test_matplotlib_visual(tinyvdiff, temp_pdf):
-    ...
+def test_matplotlib_visual(tinyvdiff, temp_pdf): ...
 ```

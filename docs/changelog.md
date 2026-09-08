@@ -1,5 +1,16 @@
 # Changelog
 
+## tinyvdiff 0.5.3
+
+### Maintenance
+
+- Replace `hatchling` with `uv_build` as the build backend and declare the MIT
+  license using the PEP 639 `license` field to eliminate the `uv build`
+  warning (#63).
+- Update GitHub Actions workflows to `actions/checkout@v7`,
+  `actions/setup-python@v7`, `actions/configure-pages@v6`,
+  `actions/upload-pages-artifact@v5` and `actions/deploy-pages@v5` (#64).
+
 ## tinyvdiff 0.5.2
 
 ### Documentation
